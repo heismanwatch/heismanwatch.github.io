@@ -1,22 +1,654 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <title>Heisman Watch</title>
     <link  rel="stylesheet" href="app.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!--dropdown to select page-->
+    <script>
+        function redirectToPage() {
+            // Get the selected value from the dropdown
+            var select = document.getElementById("pageSelector");
+            var selectedValue = select.value;
+
+            // Redirect to the selected page
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+
+<!--Styles -->
+<!--#region collapsable section-->
+    <style>
+        ol {
+            padding-left: 500px; /* Indent the list */
+        }
+        li {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+    
+        }
+        .number {
+            font-weight: bold;
+            font-size: 40px;
+        }
+        li {
+            margin-bottom: 100px; /* Adds space below each list item */
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-weight: 500;
+        }
+        
+        .centered {
+            text-align: center; /* Centers inline elements like img */
+            
+        }
+        table {
+        padding-left: 50px;
+        align-items: first baseline;
+        }
+        .container {
+            padding: 5px;
+            align-items: flex-start; /* Centers the container contents */
+        }
+
+        .table-container {
+            float: left; /* Floats the table to the left */
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .header {
+            background-color: #aebee9; /* Change this to the desired color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+        
+
+    
+    </style>
+<!--#endregion-->
 </head>
 
 <body>
 
-<h1>Heisman Watch</h1>
 
-<p>Click the button below to display the hidden content from the template element</p>
 
-<button onclick="alertButton()">Click</button>
 
-<template>
-    <h2>Flower</h2>
-</template>
+
+
+
+
+
+
+
+
+<!--Everything about the header-->
+<!--#region collapsable section-->
+
+<div class="centered">
+    <div class="header">
+        <h1>College Football Heisman Watch</h1>
+        <h2 style="text-align: center; font-weight: 300; margin: 10px;">What is the Heisman Trophy?</h2>
+
+    <p style="text-align: center; font-size: 18px; margin-bottom: 10px; color: black;">The Heisman Memorial Trophy is awarded annually since 1935 to the most outstanding player in college football.
+    It is considered the most prestigious award in college football.</p>
+    </div>
+
+
+   
+    <div class="b"><img  position: relative;  display: inline-block; width="220" height="180" src="images/heismanwatchlogo.png" alt="Logo"></div>
+    
+    <div class="custom-dropdown" style="margin-bottom: 100px;">
+        
+
+        <div class="dropdown-btn">--Select a week--</div>
+        <div class="dropdown-content">
+            <a href="week1.html">Through Week 1</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+        </div>
+    </div>
+
+</div>
+<!--#endregion-->
+
+
+
+    
+
+<!--List of previous heisman winners and runner ups-->
+<!--#region Collapsable section-->
+<div class="container">
+    <div class="table-container">
+        <p><u>Previous Winners</u></p>
+        <table border="1">
+            <tr>
+                <th>Year</th>
+                <th>Winner</th>
+                <th>Runner-up</th>
+            </tr>
+            <tr>
+                <td><b>2023</b></td>
+                <td>Jayden Daniels</td>
+                <td>Michael Penix Jr.</td>
+            </tr>
+            <tr>
+                <td><b>2022</b></td>
+                <td>Caleb Williams</td>
+                <td>Max Duggan</td>
+            </tr>
+            <tr>
+                <td><b>2021</b></td>
+                <td>Bryce Young</td>
+                <td><i>Aidan Hutchinson</i></td>
+            </tr>
+            <tr>
+                <td><b>2020</b></td>
+                <td><i>DeVonta Smith</i></td>
+                <td>Trevor Lawrence</td>
+            </tr>
+            <tr>
+                <td><b>2019</b></td>
+                <td>Joe Burrow</td>
+                <td>Jalen Hurts</td>
+            </tr>
+            <tr>
+                <td><b>2018</b></td>
+                <td>Kyler Murray</td>
+                <td>Tua Tagovailoa</td>
+            </tr>
+            <tr>
+                <td><b>2017</b></td>
+                <td>Baker Mayfield</td>
+                <td>Bryce Love</td>
+            </tr>
+            <tr>
+                <td><b>2016</b></td>
+                <td>Lamar Jackson</td>
+                <td>Deshaun Watson</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>2015</b>
+                    <td>Derrick Henry</td>
+                    <td>Christian McCaffrey</td>
+                </td>
+            </tr>
+            <tr>
+                <td><b>2014</b></td>
+                <td>Marcus Mariota</td>
+                <td>Melvin Gordon</td>
+            </tr>
+            <tr>
+                <td><b>2013</b></td>
+                <td>Jameis Winston</td>
+                <td>A.J. McCarron</td>
+            </tr>
+            <tr>
+                <td><b>2012</b></td>
+                <td>Johnny Manziel</td>
+                <td><i>Manti Te'o</i></td>
+            </tr>
+            <tr>
+                <td><b>2011</b></td>
+                <td>Robert Griffin III</td>
+                <td>Andrew Luck</td>
+            </tr>
+            <tr>
+                <td><b>2010</b></td>
+                <td>Cam Newton</td>
+                <td>Andrew Luck</td>
+            </tr>
+            <tr>
+                <td><b>2009</b></td>
+                <td>Mark Ingram</td>
+                <td>Toby Gerhart</td>
+            </tr>
+            <tr>
+                <td><b>2008</b></td>
+                <td>Sam Bradford</td>
+                <td>Colt McCoy</td>
+            </tr>
+            <tr>
+                <td><b>2007</b></td>
+                <td>Tim Tebow</td>
+                <td>Darren McFadden</td>
+            </tr>
+            <tr>
+                <td><b>2006</b></td>
+                <td>Troy Smith</td>
+                <td>Darren McFadden</td>
+            </tr>
+            <tr>
+                <td><b>2005</b></td>
+                <td>Reggie Bush</td>
+                <td>Vince Young</td>
+            </tr>
+            <tr>
+                <td><b>2004</b></td>
+                <td>Matt Leinart</td>
+                <td>Adrian Peterson</td>
+            </tr>
+            <tr>
+                <td><b>2003</b></td>
+                <td>Jason White</td>
+                <td><i>Larry Fitzgerald</i></td>
+            </tr>
+            <tr>
+                <td><b>2002</b></td>
+                <td>Carson Palmer</td>
+                <td>Brad Banks</td>
+            </tr>
+            <tr>
+                <td><b>2001</b></td>
+                <td>Eric Crouch</td>
+                <td>Rex Grossman</td>
+            </tr>
+            <tr>
+                <td><b>2000</b></td>
+                <td>Chris Weinke</td>
+                <td>John Heupel</td>
+            </tr>
+            <tr>
+                <td><b>1999</b></td>
+                <td>Ron Dayne</td>
+                <td>Joe Hamilton</td>
+            </tr>
+            <tr>
+                <td><b>1998</b></td>
+                <td>Ricky Williams</td>
+                <td>Michael Bishop</td>
+            </tr>
+            <tr>
+                <td><b>1997</b></td>
+                <td><i>Charles Woodson</i></td>
+                <td>Peyton Manning</td>
+            </tr>
+            <tr>
+                <td><b>1996</b></td>
+                <td>Danny Wuerffel</td>
+                <td>Troy Davis</td>
+            </tr>
+            <tr>
+                <td><b>1995</b></td>
+                <td>Eddie George</td>
+                <td>Tommie Frazier</td>
+            </tr>
+            <tr>
+                <td><b>1994</b></td>
+                <td>Rashaan Salaam</td>
+                <td>Ki-Jana Carter</td>
+            </tr>
+            <tr>
+                <td><b>1993</b></td>
+                <td>Charlie Ward</td>
+                <td>Heath Shuler</td>
+            </tr>
+            <tr>
+                <td><b>1992</b></td>
+                <td>Gino Torretta</td>
+                <td>Marshall Faulk</td>
+            </tr>
+            <tr>
+                <td><b>1991</b></td>
+                <td><i>Desmond Howard</i></td>
+                <td>Casey Weldon</td>
+            </tr>
+            <tr>
+                <td><b>1990</b></td>
+                <td>Ty Detmer</td>
+                <td><i>Raghib Ismail</i></td>
+            </tr>
+            <tr>
+                <td><b>1989</b></td>
+                <td>Andre Ware</td>
+                <td>Anthony Thompson</td>
+            </tr>
+            <tr>
+                <td><b>1988</b></td>
+                <td>Barry Sanders</td>
+                <td>Rodney Peete</td>
+            </tr>
+            <tr>
+                <td><b>1987</b></td>
+                <td><i>Tim Brown</i></td>
+                <td>Don McPherson</td>
+            </tr>
+            <tr>
+                <td><b>1986</b></td>
+                <td>Vinny Testaverde</td>
+                <td>Paul Palmer</td>
+            </tr>
+            <tr>
+                <td><b>1985</b></td>
+                <td>Bo Jackson</td>
+                <td>Chuck Long</td>
+            </tr>
+            <tr>
+                <td><b>1984</b></td>
+                <td>Doug Flutie</td>
+                <td>keith Byars</td>
+            </tr>
+            <tr>
+                <td><b>1983</b></td>
+                <td>Mike Rozier</td>
+                <td>Steve Young</td>
+            </tr>
+            <tr>
+                <td><b>1982</b></td>
+                <td>Herschel Walker</td>
+                <td>John Elway</td>
+            </tr>
+            <tr>
+                <td><b>1981</b></td>
+                <td>Marcus Allen</td>
+                <td>Herschel Walker</td>
+            </tr>
+            <tr>
+                <td><b>1980</b></td>
+                <td>George Rogers</td>
+                <td><i>Hugh Green</i></td>
+            </tr>
+            <tr>
+                <td><b>1979</b></td>
+                <td>Charles White</td>
+                <td>Billy Sims</td>
+            </tr>
+            <tr>
+                <td><b>1978</b></td>
+                <td>Billy Sims</td>
+                <td>Chuch Fusina</td>
+            </tr>
+            <tr>
+                <td><b>1977</b></td>
+                <td>Earl Campbell</td>
+                <td>Terry Miller</td>
+            </tr>
+            <tr>
+                <td><b>1976</b></td>
+                <td>Tony Dorsett</td>
+                <td>Ricky Bell</td>
+            </tr>
+            <tr>
+                <td><b>1975</b></td>
+                <td>Archie Griffin</td>
+                <td>Chuck Muncie</td>
+            </tr>
+            <tr>
+                <td><b>1974</b></td>
+                <td>Archie Griffin</td>
+                <td>Anthony Davis</td>
+            </tr>
+            <tr>
+                <td><b>1973</b></td>
+                <td>John Cappelletti</td>
+                <td><i>John Hicks</i></td>
+            </tr>
+            <tr>
+                <td><b>1972</b></td>
+                <td><i>Johnny Rodgers</i></td>
+                <td>Greg Pruitt</td>
+            </tr>
+            <tr>
+                <td><b>1971</b></td>
+                <td>Pat Sullivan</td>
+                <td>Ed Marinaro</td>
+            </tr>
+            <tr>
+                <td><b>1970</b></td>
+                <td>Jim Plunkett</td>
+                <td>Joe Theismann</td>
+            </tr>
+            <tr>
+                <td><b>1969</b></td>
+                <td>Steve Owens</td>
+                <td>Mike Phipps</td>
+            </tr>
+            <tr>
+                <td><b>1968</b></td>
+                <td>O.J. Simpson</td>
+                <td>Leroy Keyes</td>
+            </tr>
+            <tr>
+                <td><b>1967</b></td>
+                <td>Gary Beban</td>
+                <td>O.J. Simpson</td>
+            </tr>
+            <tr>
+                <td><b>1966</b></td>
+                <td>Steve Spurrier</td>
+                <td>Bob Griese</td>
+            </tr>
+            <tr>
+                <td><b>1965</b></td>
+                <td>Mike Garrett</td>
+                <td><i>Howard Twilley</i></td>
+            </tr>
+            <tr>
+                <td><b>1964</b></td>
+                <td>John Huarte</td>
+                <td>Jerry Rhome</td>
+            </tr>
+            <tr>
+                <td><b>1963</b></td>
+                <td>Roger Staubach</td>
+                <td>Billy Lothridge</td>
+            </tr>
+            <tr>
+                <td><b>1962</b></td>
+                <td>Terry Baker</td>
+                <td>Jerry Stovall</td>
+            </tr>
+            <tr>
+                <td><b>1961</b></td>
+                <td>Ernie Davis</td>
+                <td>Bob Ferguson</td>
+            </tr>
+            <tr>
+                <td><b>1960</b></td>
+                <td>Joe Bellino</td>
+                <td><i>Tom Brown</i></td>
+            </tr>
+            <tr>
+                <td><b>1959</b></td>
+                <td>Billy Cannon</td>
+                <td>Richie Lucas</td>
+            </tr>
+            <tr>
+                <td><b>1958</b></td>
+                <td>Pete Dawkins</td>
+                <td>Randy Duncan</td>
+            </tr>
+            <tr>
+                <td><b>1957</b></td>
+                <td>John David Crow</td>
+                <td><i>Alex Karras</i></td>
+            </tr>
+            <tr>
+                <td><b>1956</b></td>
+                <td>Paul Hornung</td>
+                <td>Johnny Majors</td>
+            </tr>
+            <tr>
+                <td><b>1955</b></td>
+                <td>Howard Cassady</td>
+                <td>Jim Swink</td>
+            </tr>
+            <tr>
+                <td><b>1954</b></td>
+                <td><i>Alan Ameche</i></td>
+                <td><i>Kurt Burris</i></td>
+            </tr>
+            <tr>
+                <td><b>1953</b></td>
+                <td>John Lattner</td>
+                <td>Paul Giel</td>
+            </tr>
+            <tr>
+                <td><b>1952</b></td>
+                <td>Billy Vessels</td>
+                <td>Jack Scarbath</td>
+            </tr>
+            <tr>
+                <td><b>1951</b></td>
+                <td>Dick Kazmaier</td>
+                <td>Hank Lauricella</td>
+            </tr>
+            <tr>
+                <td><b>1950</b></td>
+                <td>Vic Janowicz</td>
+                <td>Kyle Rote</td>
+            </tr>
+            <tr>
+                <td><b>1949</b></td>
+                <td><i>Leon Hart</i></td>
+                <td>Charlie Justice</td>
+            </tr>
+            <tr>
+                <td><b>1948</b></td>
+                <td>Doak Walker</td>
+                <td>Charlie Justice</td>
+            </tr>
+            <tr>
+                <td><b>1947</b></td>
+                <td>John Lujack</td>
+                <td>Bob Chappuis</td>
+            </tr>
+            <tr>
+                <td><b>1946</b></td>
+                <td>Glenn Davis</td>
+                <td>Charley Trippi</td>
+            </tr>
+            <tr>
+                <td><b>1945</b></td>
+                <td><i>Doc Blanchard</i></td>
+                <td>Glenn Davis</td>
+            </tr>
+            <tr>
+                <td><b>1944</b></td>
+                <td>Les Horvath</td>
+                <td>Glenn Davis</td>
+            </tr>
+            <tr>
+                <td><b>1943</b></td>
+                <td>Angelo Bertelli</td>
+                <td>Bob Odell</td>
+            </tr>
+            <tr>
+                <td><b>1942</b></td>
+                <td>Frank Sinkwich</td>
+                <td>Paul Governali</td>
+            </tr>
+            <tr>
+                <td><b>1941</b></td>
+                <td>Bruce Smith</td>
+                <td>Angelo Bertelli</td>
+            </tr>
+            <tr>
+                <td><b>1940</b></td>
+                <td>Bruce Smith</td>
+                <td>John Kimbrough</td>
+            </tr>
+            <tr>
+                <td><b>1939</b></td>
+                <td>Nile Kinnick</td>
+                <td>Tom Harmon</td>
+            </tr>
+            <tr>
+                <td><b>1938</b></td>
+                <td>Davey O'Brien</td>
+                <td>Marshall Goldberg</td>
+            </tr>
+            <tr>
+                <td><b>1937</b></td>
+                <td>Clinton Frank</td>
+                <td>Byron White</td>
+            </tr>
+            <tr>
+                <td><b>1936</b></td>
+                <td><i>Larry Kelley</i></td>
+                <td>Sam Francis</td>
+            </tr>
+            <tr>
+                <td><b>1935</b></td>
+                <td>Jay Berwanger</td>
+                <td>Monk Meyer</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--#endregion-->
+
+<!-- This is where the list of heisman watchers will go -->
+<ol>
+    <li>
+        <div class="image-container">
+            <span class="number">1.</span>
+            <img width="32" height="32" src="teams/new_mexico.png" alt="New Mexico">
+            <a href="https://www.espn.com/college-football/player/_/id/5105849/devon-dampier" target="_blank" style="padding-left: 10px;">Devon Dampier, QB</a> <p> 2 GP | 432 Yards | 6.4 Avg | 4 TD | 2 INT | 164 Rushing Yards</p>
+        </div>
+        <!--Image of the player goes here-->
+        <img style="border: 5px solid black;" width="400" height = "200" src="players/devondampier.jpg">
+        <!--Short description here-->
+        <p style=" margin-bottom: 120px;">little blurb</p>
+
+    </li>
+
+    <li>
+        <div class = "image-container">
+            <span class="number">2.</span>
+            <img width="32" height="32" src="teams/boisest.png" alt="boise st">
+            <a href="https://www.espn.com/college-football/player/_/id/4890973/ashton-jeanty" target="_blank" style="padding-left: 10px;">Ashton Jeanty, RB</a> <p> 1 GP | 267 Yards | 13.4 Avg | 6 TD</p>
+        </div>
+        <!--Image of player 2 goes here-->
+        <img style="border:5px solid black;" width="400" height="280" src="players/ashton_jeanty.webp">
+        <!--Short description of player goes here-->
+        <p style="margin-bottom: 120px;">boop boop</p>
+    </li>
+    <li>
+        <div class = "image-container">
+            <span class="number">3.</span>
+            <img width="32" height="32" src="teams/wazzu.png" alt="wazzu">
+            <a href="https://www.espn.com/college-football/player/_/id/4915980/john-mateer"target="_blank" style="padding-left: 10px;">John Mateer, QB</a> <p> 1 GP | 352 Yards | 20.7 Avg |  5 TD | 0 INT</p>
+        </div>
+        <!--Image of player 3 goes here-->
+        <img style = "border: 5px solid black;" width="400" height="250"src="players/john_mateer.webp">
+        <!--Short description of player goes here-->
+        <p style="margin-bottom: 120px;">meow moew</p>
+
+    </li>
+</ol>
+
+
+
+
+
+
+
+
 
 </body>
+
+
 <script src="app.js"></script>
 
 </html>

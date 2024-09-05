@@ -32,6 +32,17 @@ select {
     flex-direction: column;
 }
 
+.text-box {
+    width: 386px; /* Set a fixed width for the box */
+    max-width: 100%; /* Make sure it stays responsive */
+    padding: 10px;
+    border: 2px solid #ccc; /* Border around the box */
+    background-color: #aebee9; /* Light background color */
+    color: #000000;
+    word-wrap: break-word; /* Break long words if needed */
+    margin-left: 20px auto; /* Center the box on the page */
+}
+
 
 
 
@@ -83,3 +94,95 @@ select {
 .image-container {
     text-align: start;
 }
+
+
+.fixed-image {
+    position: fixed;
+    top: 50%;
+    right: 100px; /* Adjust distance from the right edge */
+    transform: translateY(-50%);
+    width: 600px; /* Adjust image size */
+    height: auto;
+}
+
+/* footer to the page*/
+.footer {
+    background-color: #aebee9; /* Background color of the footer */
+    color: white; /* Text color */
+    padding: 20px; /* Padding inside the footer */
+    text-align: center; /* Center the text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    width: 200px;
+    background-color: #aebee9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.about-info {
+    text-align: center;
+}
+
+.about-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Circular photo */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    margin-bottom: 10px;
+}
+
+.about-info p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

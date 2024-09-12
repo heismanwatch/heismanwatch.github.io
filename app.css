@@ -1,3 +1,5 @@
+
+
 h1{
     color: rgb(0, 0, 0);
     padding: 30px;
@@ -18,7 +20,7 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-    background-color: #aebee9; 
+    background-color: #EEEEFF; 
 }
 select {
     display: flex;
@@ -37,7 +39,7 @@ select {
     max-width: 100%; /* Make sure it stays responsive */
     padding: 10px;
     border: 2px solid #ccc; /* Border around the box */
-    background-color: #aebee9; /* Light background color */
+    background-color: #EEEEFF; /* Light background color */
     color: #000000;
     word-wrap: break-word; /* Break long words if needed */
     margin-left: 20px auto; /* Center the box on the page */
@@ -107,7 +109,7 @@ select {
 
 /* footer to the page*/
 .footer {
-    background-color: #aebee9; /* Background color of the footer */
+    background-color: #364652; /* Background color of the footer */
     color: white; /* Text color */
     padding: 20px; /* Padding inside the footer */
     text-align: center; /* Center the text */
@@ -116,7 +118,58 @@ select {
 
 
 
+@media (max-width: 768px) {
+    .image-container {
+        display: flex;
+        flex-direction: row; /* Horizontally align the elements */
+        align-items: center; /* Vertically center the items */
+        justify-content: flex-start; /* Align items to the left */
+    }
 
+    .image-container img {
+        margin-right: 10px; /* Add space between image and text */
+    }
+
+    .image-container p {
+        margin-left: 10px; /* Add space between stats and player name */
+        margin-bottom: 0;
+        min-width: 400px;
+    }
+
+    .player-image {
+        display: block;
+        margin: 10px auto; /* Center the player image below the content */
+    }
+
+    .text-box {
+        padding: 10px;
+        margin-top: 10px;
+        min-width: 386px;
+        max-height: 600px;
+    }
+    .table-container {
+        float: right;
+    }
+    .table {
+        align-items: last baseline;
+    }
+    .container {
+        align-items: flex-end;
+    }
+    .header {
+        background-color: #364652; /* Change this to the desired color */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        min-width: 1350px;
+    }
+    .center-logo {
+        margin-left: 700px;
+    }
+    .custom-dropdown {
+        margin-left: 700px;
+    }
+}
 
 
 
@@ -136,7 +189,7 @@ select {
 
 .sidebar {
     width: 200px;
-    background-color: #aebee9;
+    background-color: #EEEEFF;
     padding: 20px;
     border-left: 1px solid #ddd;
     position: fixed;
